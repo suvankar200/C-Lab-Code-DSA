@@ -24,7 +24,7 @@ struct node *insertAfterANode(struct node *head, int position, int data)
     ptr = head;
     while (ptr != NULL)
     {
-        if (ptr->data == position)
+        if (ptr->next->data == position)
         {
 
             newNode->next = ptr->next;
